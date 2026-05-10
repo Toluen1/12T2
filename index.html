@@ -381,7 +381,38 @@ const P1=4000, P2=1800, P3=1200, TOTAL=P1+P2+P3;
 const CW=260, CH=200, CGAP=160, CPAD=180;
 
 // ─── STATE ───────────────────────────────────────────────────────────────────
-let files=[], camX=0, camP1End=null, camFinal=null;
+let files=[{url: "https://res.cloudinary.com/dekg9yufv/image/upload/v1778398014/TK_01861_cdcn4f.jpg",
+    type: "image",
+    name: "img1"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/v1778398014/IMG_0339_rcdrzi.jpg",
+    type: "image",
+    name: "img2"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/v1778398014/TK_00494_smewiq.jpg",
+    type: "image",
+    name: "img3"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/q_auto/f_auto/v1778398013/TK_01611_jgosi6.jpg",
+    type: "image",
+    name: "img4"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/q_auto/f_auto/v1778398013/IMG_0252_mujfpb.jpg",
+    type: "image",
+    name: "img5"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/q_auto/f_auto/v1778398013/TK_01778_sdgwem.jpg",
+    type: "image",
+    name: "img6"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/q_auto/f_auto/v1778398013/TK_00518_y8hpup.jpg",
+    type: "image",
+    name: "img7"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/q_auto/f_auto/v1778398011/TK_00439_roikdg.jpg",
+    type: "image",
+    name: "img8"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/q_auto/f_auto/v1778398011/TK_00391_bog0s9.jpg",
+    type: "image",
+    name: "img9"
+  },{url: "https://res.cloudinary.com/dekg9yufv/image/upload/q_auto/f_auto/v1778398011/IMG_0885_begzdg.jpg",
+    type: "image",
+    name: "img10"
+  }
+          ], camX=0, camP1End=null, camFinal=null;
 let WORLD_W=0, MAX_CAM=0, pathLen=0, phase='landing';
 let recipientName='', envIsOpen=false, landingAlive=true;
 
